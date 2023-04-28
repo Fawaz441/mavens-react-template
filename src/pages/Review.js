@@ -169,7 +169,7 @@ function Review({ clientSecret }) {
       elements,
       confirmParams: {
         // Make sure to change this to your payment completion page
-        return_url: process.env.REACT_APP_HOST_NAME,
+        return_url: "https://fluffy-gecko-5f42c4.netlify.app"
       },
     });
 
