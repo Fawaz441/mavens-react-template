@@ -326,7 +326,7 @@ function Review({ clientSecret }) {
 
   return (
     <div className="w-[65%] mx-auto">
-      {message && <p id="payment-message" className="text-center text-black font-bold">{message}</p>}
+      {message && <p id="payment-message z-[1001]" className="text-center text-black font-bold">{message}</p>}
       {clientSecret && isValidForm &&
         <div className="fixed min-h-screen w-full bg-white p-10 top-0 left-0 z-[1000] flex flex-col space-y-3 justify-center">
           <div className="flex mb-4 w-[30vw] justify-between items-center mx-auto">
