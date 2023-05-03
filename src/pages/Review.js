@@ -55,6 +55,8 @@ function Review({ clientSecret }) {
     setFormFour,
   } = auth;
 
+  const returnUrl = `${window.location.protocol}//${window.location.host}`
+
   useEffect(() => {
     if (Object.keys(formOne).length === 0 || Object.keys(formTwo).length === 0 || Object.keys(formFour).length === 0) {
       alert("Please fill out all forms.")
@@ -169,7 +171,7 @@ function Review({ clientSecret }) {
       elements,
       confirmParams: {
         // Make sure to change this to your payment completion page
-        return_url: "https://fluffy-gecko-5f42c4.netlify.app"
+        return_url: returnUrl
       },
     });
 
